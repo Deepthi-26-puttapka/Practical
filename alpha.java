@@ -1,22 +1,21 @@
-import java.util.*;
-public class alpha {
-
-	public static void main(String[] args) {
-		
-		Scanner sc=new Scanner(System.in);
-System.out.println("enter a character");
-		String c= sc.nextLine();
-                if(c=='a'|| c=='e'||c=='i'|| c=='o'||c=='u')
+//find given character is alphabet
+import java.util.Scanner;
+class alpha
 {
-  System.out.println(" vowel");
-}
- else
+public static void main(String args[])
 {
-System.out.println(" consonents");
+System.out.println("enter the String Name:");
+
+Scanner sc=new Scanner(System.in);
+String s=sc.nextLine();
+char ch=s.charAt(0);
+if((ch>='A' && ch<='Z')||(ch>='a' && ch<='z'))
+{
+System.out.println(ch+ "is a alphabet");
 }
-
-	
-
-	}
-
+else
+{
+System.out.println(ch+"is a not a alphabet");
+}
+}
 }
